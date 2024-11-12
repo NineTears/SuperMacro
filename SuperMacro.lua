@@ -1117,3 +1117,21 @@ function SM_GetActionSpell(macroname, macrotype)
 	local texture=SM_ACTION_SPELL[macrotype][macroname].texture;
 	return actiontype, spell, texture;
 end
+
+--增加超级宏按钮
+local function SM_MacroFrameButton_OnClick()
+	if arg1 == "LeftButton" then
+		HideUIPanel(GameMenuFrame)
+		ToggleFrame(SuperMacroFrame)
+	end
+end
+
+HookAddonOrVariable("Blizzard_MacroUI", function()
+	local SM_MacroFrameButton = CreateFrame("Button", "SM_MacroFrameButton", MacroFrame, "UIPanelButtonTemplate")
+	SM_MacroFrameButton:SetWidth(60)
+	SM_MacroFrameButton:SetHeight(25)
+	SM_MacroFrameButton:SetText("超级宏")
+	SM_MacroFrameButton:SetFont(STANDARD_TEXT_FONT, 14)
+	SM_MacroFrameButton:SetPoint("TOPRIGHT", MacroFrame, "TOPRIGHT", -40, -42)
+	SM_MacroFrameButton:SetScript("OnMouseDown", SM_MacroFrameButton_OnClick)
+end)

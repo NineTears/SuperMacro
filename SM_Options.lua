@@ -145,7 +145,7 @@ end
 
 function ToggleSMWordWrap()
 	if ( not SuperMacroFrameText.SetNonSpaceWrap ) then
-		SM_WORDWRAP = "DOESN'T WORK YET";
+		SM_WORDWRAP = "尚不可用";
 		return;
 	end
 	if ( SM_VARS.wordWrap == 1 ) then
