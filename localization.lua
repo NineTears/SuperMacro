@@ -154,7 +154,7 @@ elseif GetLocale() == "zhCN" then
 	SUPERMACRO_NEW_ACCOUNT = "新建通用宏";
 	SUPERMACRO_NEW_CHARACTER = "新建角色宏";
 	SUPERMACRO_OPTIONS_TITLE = "超级宏设置";
-	SUPERMACRO_MINIMAP = "打开超级宏窗口";
+	SUPERMACRO_MINIMAP = "SuperMacro超级宏";
 	
 	SM_HIDE_ACTION = "隐藏动作条上的宏名称";
 	SM_MACRO_TIP_1 = "显示鼠标提示";
@@ -290,7 +290,7 @@ else
 	SUPERMACRO_NEW_ACCOUNT = "新建通用宏";
 	SUPERMACRO_NEW_CHARACTER = "新建角色宏";
 	SUPERMACRO_OPTIONS_TITLE = "超级宏设置";
-	SUPERMACRO_MINIMAP = "打开超级宏窗口";
+	SUPERMACRO_MINIMAP = "SuperMacro超级宏";
 	
 	SM_HIDE_ACTION = "隐藏动作条上的宏名称";
 	SM_MACRO_TIP_1 = "显示鼠标提示";
